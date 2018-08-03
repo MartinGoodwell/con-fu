@@ -1,6 +1,3 @@
-var test = require('unit.js');
-var assert = test.assert;
-
 //usually loaded from definitions-database (Git)
 var configDefinition = {
     'environments': [
@@ -41,10 +38,16 @@ var tests = {
     'positiveInteger': function(input) {
         var result;
         try {
-            assert.notEqual(isNaN(input), true);
+
+            var isNumber = !isNaN(input);
+            if (!isNumber) {
+                return false;
+            }
 
             var nrInput = Number(input);
-            assert(Number(input) > 0);
+            if (Number(input) <= 0) {
+                return false;
+            }
 
             result = true;
         } catch (e) {
@@ -69,4 +72,4 @@ var test = function(key, value) {
 };
 
 test('endpoint', 'abc');
-test('maxNrConnections', 1);
+test('maxNrConnections', 0);
