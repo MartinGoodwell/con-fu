@@ -4,6 +4,8 @@
     "description": "A toolset that makes properties unit testable",
     "main": "app.js",
     "dependencies": {
-        "unit.js": "2.0.0"
+        "unit.js": "2.0.0",
+        "lodash": "~> 4.17.5",
+        "mime": "~> 1.4.1"
     }
 }
