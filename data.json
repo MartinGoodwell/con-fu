@@ -1,0 +1,22 @@
+[
+    {
+      "id": "uuid-1",
+      "key": "environment",
+      "type": "string"
+    },
+    {
+      "id": "uuid-2",
+      "key": "maxNrConnections",
+      "type": "positiveInteger"
+    },
+    {
+      "id": "uuid-3",
+      "key": "endpoint",
+      "type": "url"
+    },
+    {
+      "id": "uuid-4",
+      "key": "host",
+      "type": "ip"
+    }
+]

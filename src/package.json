@@ -1,0 +1,9 @@
+{
+    "name": "con-fu",
+    "version": "0.1.0",
+    "description": "A toolset that makes properties unit testable",
+    "main": "app.js",
+    "dependencies": {
+        "unit.js": "2.0.0"
+    }
+}
